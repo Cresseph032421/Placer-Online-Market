@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#register-store">Register Your Store</a></li>
+                <li><a href="#sign-in">Sign In</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="content active">
+            <h1>Welcome to Our Service</h1>
+            <p>Discover our features and benefits.</p>
+        </div>
+
+        <div id="about" class="content">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and values.</p>
+        </div>
+
+        <div id="contact" class="content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries or support.</p>
+        </div>
+
+        <div id="register-store" class="content">
+            <h1>Register Your Store</h1>
+            <button id="openStoreForm">Register Now</button>
+        </div>
+
+        <div id="sign-in" class="content">
+            <div class="form-container sign-in-container">
+                <form id="signInForm">
+                    <h1>Sign In</h1>
+                    <input type="email" id="signInEmail" placeholder="Email" required />
+                    <input type="password" id="signInPassword" placeholder="Password" required />
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="sign-up" class="content">
+            <div class="form-container sign-up-container">
+                <form id="signUpForm">
+                    <h1>Create Account</h1>
+                    <input type="text" id="signUpUsername" placeholder="Username" required />
+                    <input type="email" id="signUpEmail" placeholder="Email" required />
+                    <input type="password" id="signUpPassword" placeholder="Password" required />
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="storeRegistrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeStoreForm">&times;</span>
+                <form id="storeRegistrationForm">
+                    <h1>Register Your Store</h1>
+                    <input type="text" id="storeName" placeholder="Store Name" required />
+                    <input type="text" id="storeOwner" placeholder="Owner Name" required />
+                    <input type="email" id="storeEmail" placeholder="Email" required />
+                    <input type="text" id="storeAddress" placeholder="Address" required />
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
